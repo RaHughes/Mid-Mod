@@ -17,9 +17,8 @@ class LandingForm extends Component {
   }
 
   submitReserve = () => {
-    const { addReserve } = this.props;
     const newCard = { ...this.state, id: Date.now()}
-    addReserve(newCard)
+    this.props.addReserve(newCard)
   }
 
   render() {
