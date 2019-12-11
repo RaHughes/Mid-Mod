@@ -1,0 +1,10 @@
+.landing_form {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  height: 30px;
+}

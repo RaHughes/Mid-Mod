@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LandingForm Should match snapshot 1`] = `
-<div>
+<div
+  className="landing_form"
+>
   <input
     name="name"
     onChange={[Function]}

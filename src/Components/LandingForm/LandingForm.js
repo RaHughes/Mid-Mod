@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LandingForm.css'
 
 class LandingForm extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class LandingForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className='landing_form'>
       <input 
         type='text' 
         placeholder='Name'
