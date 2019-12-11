@@ -1,8 +1,10 @@
 import React from 'react';
 import Card from '../Card/Card'
 
-const CardContainer = () => {
-
+const CardContainer = ({ reservations }) => {
+  return (
+    
+  )
 }
 
 export default CardContainer
