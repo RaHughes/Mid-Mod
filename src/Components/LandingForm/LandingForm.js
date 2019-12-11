@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class LandingForm extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       name: '',
       date: '',
@@ -13,6 +13,12 @@ class LandingForm extends Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value})
+  }
+
+  submitReserve = () => {
+    const { addReserve } = this.props;
+    const newCard = { ...this.state, id: Date.now()}
+    addReserve(newCard)
   }
 
   render() {
@@ -46,7 +52,7 @@ class LandingForm extends Component {
         name='number'
         onChange={this.handleChange}
       />
-      <button>Make Reservation</button>
+      <button onClick={this.submitReserve}>Make Reservation</button>
       </div>
     )
   }
